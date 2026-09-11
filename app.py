@@ -125,7 +125,7 @@ Return ONLY the excuse.
 
         response = client.chat.completions.create(
 
-            model="openai/gpt-oss-120b",
+            model="openai/gpt-oss-20b",
 
             messages=[
                 {
@@ -142,7 +142,8 @@ Return ONLY the excuse.
             ],
 
             temperature=1.15,
-            max_tokens=100
+            max_tokens=100, 
+            reasoning_effort="low"
         )
 
 
