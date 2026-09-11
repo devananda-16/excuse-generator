@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EXCUSE.exe — Useless Technology</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- ================= FLOATING ART ================= -->
+
+    <div class="floating-art art-1">
+        <div class="paper">
+            <span>EXCUSE</span>
+            <strong>404</strong>
+            <small>TRUTH NOT FOUND</small>
+        </div>
+    </div>
+
+    <div class="floating-art art-2">
+        <div class="coffee">
+            ☕
+        </div>
+    </div>
+
+    <div class="floating-art art-3">
+        <div class="file-icon">
+            <span>EXE</span>
+        </div>
+    </div>
+
+    <div class="floating-art art-4">
+        ✦
+    </div>
+
+
+    <!-- ================= MAIN PAGE ================= -->
+
+    <div class="page">
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div class="logo">
+                <span class="logo-main">EXCUSE</span>
+                <span class="logo-dot">.</span>
+                <span class="logo-exe">exe</span>
+            </div>
+
+            <div class="system-status">
+                SYSTEM STATUS: QUESTIONABLE
+            </div>
+
+            <div class="badge">
+                ⚠ USELESS TECHNOLOGY DIVISION
+            </div>
+
+            <p class="tagline">
+                Because reality is optional. ✦
+            </p>
+
+        </header>
+
+
+        <!-- ================= MAIN CARD ================= -->
+
+        <main class="main-card">
+
+            <!-- INTRO -->
+
+            <section class="intro">
+
+                <div class="section-label">
+                    EXCUSE GENERATOR / v1.0
+                </div>
+
+                <h1>
+    WHAT ARE YOU<br>
+    <span>SUPPOSED TO BE DOING?</span>
+</h1>
+
+                <p>
+    Because sometimes the truth needs a little competition. ☺
+                </p>
+
+            </section>
+
+
+            <!-- INPUT -->
+
+            <section class="input-section">
+
+                <label for="activity">
+                    WHAT ARE YOU SUPPOSED TO BE DOING?
+                </label>
+
+                <div class="input-wrapper">
+
+                    <input
+                        type="text"
+                        id="activity"
+                        placeholder="e.g. studying, replying to my friend..."
+                        autocomplete="off"
+                    >
+
+                    <span class="input-icon">
+                        ✦
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- PERSONALITY -->
+
+            <section class="personality-section">
+
+                <label>
+                    CHOOSE YOUR EXCUSE PERSONALITY
+                </label>
+
+                <div class="style-grid">
+
+                    <button
+                        class="style-btn active"
+                        data-style="funny"
+                        type="button">
+
+                        <span class="style-icon">😂</span>
+
+                        <span>
+                            <strong>Funny</strong>
+                            <small>Make them laugh</small>
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="style-btn"
+                        data-style="dramatic"
+                        type="button">
+
+                        <span class="style-icon">🎭</span>
+
+                        <span>
+                            <strong>Dramatic</strong>
+                            <small>Make it emotional</small>
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="style-btn"
+                        data-style="smart"
+                        type="button">
+
+                        <span class="style-icon">🧠</span>
+
+                        <span>
+                            <strong>Smart</strong>
+                            <small>Sound convincing</small>
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="style-btn"
+                        data-style="ridiculous"
+                        type="button">
+
+                        <span class="style-icon">🤡</span>
+
+                        <span>
+                            <strong>No Sense</strong>
+                            <small>Embrace chaos</small>
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- GENERATE BUTTON -->
+
+            <button
+                id="generateBtn"
+                class="generate-btn"
+                type="button">
+
+                ✦ GENERATE MY EXCUSE 🎲
+
+            </button>
+
+
+            <!-- ================= RESULT ================= -->
+
+            <section
+                id="result"
+                class="result hidden">
+
+                <div class="result-top">
+
+                    <div class="result-label">
+                        GENERATED EXCUSE
+                    </div>
+
+                    <div class="confidential">
+                        CONFIDENTIAL
+                    </div>
+
+                </div>
+
+
+                <div class="excuse-box">
+
+                    <p id="excuseText">
+                        "Your excuse will appear here..."
+                    </p>
+
+                </div>
+
+
+                <!-- STATS -->
+
+                <div class="stats">
+
+                    <div class="stat">
+
+                        <span class="stat-label">
+                            BELIEVABILITY
+                        </span>
+
+                        <strong id="believability">
+                            0%
+                        </strong>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <span class="stat-label">
+                            RIDICULOUSNESS
+                        </span>
+
+                        <strong id="ridiculousness">
+                            0%
+                        </strong>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <span class="stat-label">
+                            CHANCE OF GETTING CAUGHT
+                        </span>
+
+                        <strong id="caught">
+                            0%
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ACTION BUTTONS -->
+
+                <div class="action-buttons">
+
+                    <button
+                        id="againBtn"
+                        type="button">
+
+                        ↻ Generate Again
+
+                    </button>
+
+
+                    <button
+                        id="worseBtn"
+                        type="button">
+
+                        🤡 Make It Worse
+
+                    </button>
+
+
+                    <button
+                        id="copyBtn"
+                        type="button">
+
+                        📋 Copy
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- ================= USELESS STATS ================= -->
+
+        <section class="useless-stats">
+
+            <div class="useless-stat">
+
+                <span>0%</span>
+                <small>LOGIC</small>
+
+            </div>
+
+
+            <div class="useless-stat">
+
+                <span>87%</span>
+                <small>CONFIDENCE</small>
+
+            </div>
+
+
+            <div class="useless-stat">
+
+                <span>∞</span>
+                <small>NONSENSE</small>
+
+            </div>
+
+
+            <div class="useless-stat">
+
+                <span>404</span>
+                <small>TRUTH</small>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <span>
+                EXCUSE.exe
+            </span>
+
+            <span>
+                MADE FOR ABSOLUTELY NO REASON
+            </span>
+
+            <span>
+                © 2026
+            </span>
+
+        </footer>
+
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        let selectedStyle = "funny";
+
+        const activityInput =
+            document.getElementById("activity");
+
+        const generateBtn =
+            document.getElementById("generateBtn");
+
+        const result =
+            document.getElementById("result");
+
+        const excuseText =
+            document.getElementById("excuseText");
+
+        const styleButtons =
+            document.querySelectorAll(".style-btn");
+
+
+        /* STYLE BUTTONS */
+
+        styleButtons.forEach(button => {
+
+            button.addEventListener("click", () => {
+
+                styleButtons.forEach(btn => {
+                    btn.classList.remove("active");
+                });
+
+                button.classList.add("active");
+
+                selectedStyle =
+                    button.dataset.style;
+
+            });
+
+        });
+
+
+        /* GENERATE EXCUSE */
+
+        async function generateExcuse(style = selectedStyle) {
+
+            const activity =
+                activityInput.value.trim();
+
+
+            if (!activity) {
+
+                alert(
+                    "Tell me what you're doing first 😭"
+                );
+
+                return;
+            }
+
+
+            generateBtn.innerText =
+                "GENERATING USELESSNESS... 💀";
+
+            generateBtn.disabled = true;
+
+
+            try {
+
+                const response =
+                    await fetch("/generate", {
+
+                        method: "POST",
+
+                        headers: {
+                            "Content-Type":
+                                "application/json"
+                        },
+
+                        body: JSON.stringify({
+
+                            activity: activity,
+
+                            style: style
+
+                        })
+
+                    });
+
+
+                const data =
+                    await response.json();
+
+
+                if (data.success) {
+
+                    excuseText.innerText =
+                        `"${data.excuse}"`;
+
+
+                    document.getElementById(
+                        "believability"
+                    ).innerText =
+                        data.believability + "%";
+
+
+                    document.getElementById(
+                        "ridiculousness"
+                    ).innerText =
+                        data.ridiculousness + "%";
+
+
+                    document.getElementById(
+                        "caught"
+                    ).innerText =
+                        data.caught + "%";
+
+
+                    result.classList.remove(
+                        "hidden"
+                    );
+
+                }
+
+                else {
+
+                    excuseText.innerText =
+                        data.message;
+
+                    result.classList.remove(
+                        "hidden"
+                    );
+
+                }
+
+            }
+
+
+            catch (error) {
+
+                console.error(error);
+
+                excuseText.innerText =
+                    "EXCUSE.exe crashed while inventing an excuse. 💀";
+
+                result.classList.remove(
+                    "hidden"
+                );
+
+            }
+
+
+            generateBtn.innerText =
+                "✦ GENERATE MY EXCUSE 🎲";
+
+            generateBtn.disabled = false;
+
+        }
+
+
+        /* MAIN GENERATE BUTTON */
+
+        generateBtn.addEventListener(
+            "click",
+            () => {
+                generateExcuse();
+            }
+        );
+
+
+        /* GENERATE AGAIN */
+
+        document.getElementById(
+            "againBtn"
+        ).addEventListener(
+            "click",
+            () => {
+                generateExcuse();
+            }
+        );
+
+
+        /* MAKE IT WORSE */
+
+        document.getElementById(
+            "worseBtn"
+        ).addEventListener(
+            "click",
+            () => {
+
+                selectedStyle =
+                    "ridiculous";
+
+
+                styleButtons.forEach(btn => {
+                    btn.classList.remove("active");
+                });
+
+
+                document
+                    .querySelector(
+                        '[data-style="ridiculous"]'
+                    )
+                    .classList.add("active");
+
+
+                generateExcuse(
+                    "ridiculous"
+                );
+
+            }
+        );
+
+
+        /* COPY */
+
+        document.getElementById(
+            "copyBtn"
+        ).addEventListener(
+            "click",
+            async () => {
+
+                try {
+
+                    await navigator.clipboard.writeText(
+                        excuseText.innerText
+                    );
+
+
+                    document.getElementById(
+                        "copyBtn"
+                    ).innerText =
+                        "✅ Copied!";
+
+
+                    setTimeout(() => {
+
+                        document.getElementById(
+                            "copyBtn"
+                        ).innerText =
+                            "📋 Copy";
+
+                    }, 1500);
+
+                }
+
+                catch (error) {
+
+                    alert(
+                        "Couldn't copy 😭"
+                    );
+
+                }
+
+            }
+        );
+
+
+        /* ENTER KEY */
+
+        activityInput.addEventListener(
+            "keydown",
+            (event) => {
+
+                if (event.key === "Enter") {
+
+                    generateExcuse();
+
+                }
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>
