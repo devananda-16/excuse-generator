@@ -2,39 +2,47 @@
 
 
 
-# [Project Name] 🎯
+# EXCUSE GENERATOR 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: ERROR 404
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Devananda T A   - AISAT
+- Member 2: Sneha Gajmoti  - AISAT
 
 ### Project Description
-[2-3 lines about what your project does]
+EXCUSE.exe is an AI-powered excuse generator that creates unique and creative excuses based on what the user is supposed to be doing. Users can choose different personalities like Funny, Dramatic, Smart, or Ridiculous and let AI generate an excuse for them.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Sometimes, people need a perfectly reasonable excuse for not doing something they were supposed to do.
+
+Unfortunately, coming up with a convincing excuse requires effort.
+
+EXCUSE.exe solves this completely unnecessary problem. 😭
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+EXCUSE.exe uses AI to generate a fresh excuse based on the user's activity and selected personality.
+
+Just enter what you're supposed to be doing, choose your excuse style, and let EXCUSE.exe handle the rest.
+
+Because apparently, even making excuses can be automated. 💀
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- Languages used: Python, HTML, CSS, JavaScript
+- Frameworks used: Flask
+- Libraries used: Groq, python-dotenv
+- APIs used: Groq API
+- AI Model: Llama 3.3 70B
+- Tools used: VS Code, Git, GitHub
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- No hardware components required
+- Runs completely as a web application
 
 ### Implementation
 For Software:
@@ -89,9 +97,8 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Devananda T A: Frontend , Web Design
+- Sneha Gajmoti : Backend , README
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
